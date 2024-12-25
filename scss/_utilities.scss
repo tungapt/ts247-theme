@@ -1,0 +1,21 @@
+// Các tiện ích CSS
+.clearfix {
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  
+  .margin-top {
+    margin-top: 1rem;
+  }
+  

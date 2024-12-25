@@ -1,0 +1,35 @@
+/* Reset các margin, padding mặc định và border */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  @each $name, $value in (
+    primary-color: $primary-color,
+    secondary-color: $secondary-color,
+    success-color: $success-color,
+    danger-color: $danger-color,
+    warning-color: $warning-color,
+    info-color: $info-color,
+    light-color: $light-color,
+  ) {
+    --#{$name}: #{$value};
+  }
+}
+:root[theme=light]{
+  background: $light-color;
+  color: $dark-color;
+}
+:root[theme=dark]{
+  background: $dark-color;
+  color: $light-color;
+}
+html{
+  font-size: 14px;
+}
+body {
+  font-family: $font-family-base;
+}

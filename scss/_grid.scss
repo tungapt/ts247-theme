@@ -1,0 +1,32 @@
+// Lưới bootstrap
+$grid-gutter-width: 1.5rem;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -$grid-gutter-width;
+  margin-left: -$grid-gutter-width;
+}
+
+.col {
+  flex: 1;
+  padding-right: $grid-gutter-width;
+  padding-left: $grid-gutter-width;
+}
+
+// Các breakpoint
+$grid-breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+@each $breakpoint, $value in $grid-breakpoints {
+  @media (min-width: $value) {
+    .col-#{$breakpoint} {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+  }
+}

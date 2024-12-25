@@ -1,0 +1,31 @@
+// Kiểu dáng cho navbar
+.navbar {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    
+    .navbar-brand {
+      color: #fff;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+  
+    .navbar-nav {
+      list-style: none;
+      display: flex;
+    }
+  
+    .nav-item {
+      margin-right: 1rem;
+    }
+  
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+  
+      &:hover {
+        color: darken($primary-color, 15%);
+      }
+    }
+  }
+  
