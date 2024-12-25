@@ -1,4 +1,4 @@
-# Tài Liệu Hướng Dẫn Sử Dụng Thư Viện SCSS
+# Tài Liệu Hướng Dẫn Sử Dụng Thư Viện Tuyển Sinh 247
 
 ## 1. Giới thiệu
 Thư viện SCSS này được xây dựng nhằm cung cấp một tập hợp các tiện ích và thành phần giao diện thường dùng, lấy cảm hứng từ Bootstrap. File `main.scss` là tệp gốc, nơi các tệp SCSS thành phần khác được import để biên dịch thành CSS cuối cùng.
