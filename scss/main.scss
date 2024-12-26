@@ -1,12 +1,15 @@
-@import 'variables';
-@import 'mixins';
-@import 'reset';
-@import 'typography';
-@import 'buttons';
-@import 'forms';
-@import 'grid';
-@import 'flex';
-@import 'navbar';
-@import 'cards';
-@import 'modals';
-@import 'utilities';
+@import "reset";
+
+#home-page{
+    .home-page__header{
+        .home-page__header__sticky{
+            background: var(--gray-400);
+            .home-page__header__sticky--hotline{
+
+            }
+            .home-page__header__sticky--account{
+
+            }
+        }
+    }
+}

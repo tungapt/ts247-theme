@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --blue: #306bb0;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #d63384;
+  --red: #dc3545;
+  --orange: #ef652d;
+  --yellow: #ffc107;
+  --green: #198754;
+  --teal: #20c997;
+  --cyan: #0dcaf0;
+}
+
+:root[theme=light] {
+  background: var(--white);
+  color: var(--gray-900);
+  --white: #fff;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --black: #000;
+}
+
+:root[theme=dark] {
+  background: var(--gray-100);
+  color: var(--black);
+  --white: #000; /* Trắng chuyển thành đen */
+  --gray-100: #212529; /* Xám nhạt nhất -> đen nhạt */
+  --gray-200: #343a40;
+  --gray-300: #495057;
+  --gray-400: #6c757d;
+  --gray-500: #adb5bd; /* Giữ trung lập */
+  --gray-600: #ced4da;
+  --gray-700: #dee2e6;
+  --gray-800: #e9ecef;
+  --gray-900: #f8f9fa; /* Xám đậm nhất -> xám nhạt nhất */
+  --black: #fff;
+}
+
+@font-face {
+  font-family: "Material Symbols";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Material-symbols.woff2") format("woff2");
+}
+.material-symbols-outlined {
+  font-family: "Material Symbols";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5em;
+  line-height: 1.5rem;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-symbols-outlined.fill {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#home-page .home-page__header .home-page__header__sticky {
+  background: var(--gray-400);
+}
+
+/*# sourceMappingURL=main.css.map */
