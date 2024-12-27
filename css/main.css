@@ -2,11 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   --blue: #306bb0;
+  --blue-light: #1f80c6;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #d63384;
   --red: #dc3545;
   --orange: #ef652d;
+  --orange-light: #eda550;
   --yellow: #ffc107;
   --green: #198754;
   --teal: #20c997;
@@ -15,7 +17,7 @@
 
 :root[theme=light] {
   background: var(--white);
-  color: var(--gray-900);
+  color: var(--gray-800);
   --white: #fff;
   --gray-100: #f8f9fa;
   --gray-200: #e9ecef;
@@ -31,7 +33,7 @@
 
 :root[theme=dark] {
   background: var(--gray-100);
-  color: var(--black);
+  color: var(--gray-800);
   --white: #000; /* Trắng chuyển thành đen */
   --gray-100: #212529; /* Xám nhạt nhất -> đen nhạt */
   --gray-200: #343a40;
@@ -55,7 +57,7 @@
   font-family: "Material Symbols";
   font-weight: normal;
   font-style: normal;
-  font-size: 1.5em;
+  font-size: 1.3em;
   line-height: 1.5rem;
   letter-spacing: normal;
   text-transform: none;
@@ -82,6 +84,7 @@
 
 html {
   font-size: 14px;
+  line-height: 1.5rem;
 }
 
 body {
@@ -112,8 +115,72 @@ table {
   border-spacing: 0;
 }
 
+.ts247-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.ts247-btn:hover {
+  background: var(--gray-200);
+}
+
+.ts247-btn-primary {
+  background: var(--blue);
+  color: #fff;
+  border: 1px solid var(--blue);
+  border-radius: 3px;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.ts247-btn-primary:hover {
+  filter: brightness(1.1);
+}
+
+.ts247-btn-secondary {
+  background: var(--gray-200);
+  color: var(--gray-700);
+  border: 1px solid var(--gray-400);
+  border-radius: 3px;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.ts247-btn-secondary:hover {
+  filter: brightness(1.1);
+}
+
 #home-page .home-page__header .home-page__header__sticky {
-  background: var(--gray-400);
+  background: var(--gray-200);
+}
+#home-page .home-page__header .home-page__header__middle .home-page__header__middle__logo--pc {
+  width: 16rem;
+}
+#home-page .home-page__header .home-page__header__middle .home-page__header__middle__logo--mobile {
+  width: 3rem;
+}
+#home-page .home-page__header .home-page__header__nav {
+  background: var(--blue);
+  color: #fff;
+}
+#home-page .home-page__header .home-page__header__nav .home-page__header__nav__menu > li {
+  position: relative;
+}
+#home-page .home-page__header .home-page__header__nav .home-page__header__nav__menu > li > a {
+  display: block;
+  padding: 0.55rem 0.8rem;
+  text-transform: uppercase;
+}
+#home-page .home-page__header .home-page__header__nav .home-page__header__nav__menu > li:nth-child(1) a {
+  background: var(--orange-light);
+}
+#home-page .home-page__header .home-page__header__nav .home-page__header__nav__menu > li .code-active {
+  background: var(--blue-light);
 }
 
 /*# sourceMappingURL=main.css.map */

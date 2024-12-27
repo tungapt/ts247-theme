@@ -1,0 +1,40 @@
+.ts247-btn{
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 0.4rem 0.8rem;
+    transition: all .3s;
+    cursor: pointer;
+    &:hover{
+        background: var(--gray-200);
+    }
+}
+
+.ts247-btn-primary{
+    background: var(--blue);
+    color: #fff;
+    border: 1px solid var(--blue);
+    border-radius: 3px;
+    padding: 0.4rem 0.8rem;
+    transition: all .3s;
+    cursor: pointer;
+    &:hover{
+        filter: brightness(1.1);
+    }
+}
+
+.ts247-btn-secondary{
+    background: var(--gray-200);
+    color: var(--gray-700);
+    border: 1px solid var(--gray-400);
+    border-radius: 3px;
+    padding: 0.4rem 0.8rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    
+    &:hover{
+        filter: brightness(1.1);
+    }
+}

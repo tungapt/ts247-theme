@@ -1,13 +1,42 @@
 @import "reset";
+@import "button";
 
 #home-page{
     .home-page__header{
         .home-page__header__sticky{
-            background: var(--gray-400);
-            .home-page__header__sticky--hotline{
-
+            background: var(--gray-200);
+        }
+        .home-page__header__middle{
+            .home-page__header__middle__logo--pc{
+                width: 16rem;
             }
-            .home-page__header__sticky--account{
+            .home-page__header__middle__logo--mobile{
+                width: 3rem;
+            }
+        }
+        .home-page__header__nav{
+            background: var(--blue);
+            color: #fff;
+            .home-page__header__nav__menu{
+                &>li{
+                    position: relative;
+                    &>a{
+                        display: block;
+                        padding: 0.55rem 0.8rem;
+                        text-transform: uppercase;
+                    }
+                    &:nth-child(1){
+                        a{
+                            background: var(--orange-light);
+                        }
+                    }
+                    .code-active{
+                        background: var(--blue-light);
+                    }
+                    &>ul{
+                        
+                    }
+                }
 
             }
         }
