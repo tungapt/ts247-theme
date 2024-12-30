@@ -1,0 +1,42 @@
+.icon-hot{
+    width: 33px;
+    height: 17px;
+    display: inline-block;
+    background: url(../images/icon-hot-red.png) top / contain no-repeat;
+}
+.icon-new{
+    width: 33px;
+    height: 17px;
+    display: inline-block;
+    background: url(../images/icon-new-green.png) top / contain no-repeat;
+}
+.icon-live{
+    width: 28px;
+    height: 25px;
+    display: inline-block;
+    background: url(../images/icon-live.png) top / contain no-repeat;
+}
+.effect-to-left {
+    animation: toLeft 1s alternate-reverse infinite;
+}
+.nhap-nhay {
+    animation: nhapNhay 1s steps(2) infinite;
+}
+@keyframes toLeft {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-5px);
+        filter: opacity(.6);
+    }
+}
+@keyframes nhapNhay {
+    0% {
+        filter: brightness(1);
+    }
+    
+    100% {
+        filter: brightness(1.7);
+    }
+}
