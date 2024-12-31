@@ -38,3 +38,18 @@
         filter: brightness(1.1);
     }
 }
+.ts247-btn-success{
+    background: var(--green);
+    color: #fff;
+    border: 1px solid var(--green);
+    border-radius: 3px;
+    padding: 0.4rem 0.8rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    
+    &:hover{
+        filter: brightness(1.1);
+    }
+}
