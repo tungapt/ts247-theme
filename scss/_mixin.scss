@@ -1,0 +1,17 @@
+@mixin small {
+    @media all and (min-width: 320px) and (max-width: 575px) { // max-width 575px thay vì 576px để đảm bảo không trùng với medium
+        @content;
+    }
+}
+
+@mixin medium {
+    @media all and (min-width: 576px) and (max-width: 991px) { // Khoảng giữa 576px và 991px để tránh trùng với large
+        @content;
+    }
+}
+
+@mixin large {
+    @media all and (min-width: 992px) { // min-width 992px cho màn hình lớn hơn hoặc bằng 992px
+        @content;
+    }
+}
