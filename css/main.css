@@ -13,12 +13,14 @@
   --green: #529839;
   --teal: #20c997;
   --cyan: #0dcaf0;
+  --white: #fff;
+  --black: #000;
 }
 
 :root[theme=light] {
   background: var(--white);
   color: var(--gray-800);
-  --white: #fff;
+  --gray-0: #fff;
   --gray-100: #f8f9fa;
   --gray-200: #e9ecef;
   --gray-300: #dee2e6;
@@ -34,7 +36,8 @@
 :root[theme=dark] {
   background: var(--gray-100);
   color: var(--gray-800);
-  --white: #000; /* Trắng chuyển thành đen */
+  /* Trắng chuyển thành đen */
+  --gray-0: #000;
   --gray-100: #212529; /* Xám nhạt nhất -> đen nhạt */
   --gray-200: #343a40;
   --gray-300: #495057;
@@ -161,6 +164,23 @@ table {
     filter: brightness(1.7);
   }
 }
+.badge {
+  width: 17px;
+  height: 17px;
+  background: var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 99px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  font-style: normal;
+  border: 1px solid var(--white);
+  font-size: 0.7rem;
+}
+
 .ts247-btn {
   background: transparent;
   border: 1px solid transparent;
@@ -259,18 +279,104 @@ table {
   color: var(--yellow);
 }
 
-.logo-search-cart .logo-search-cart__logo__pc {
+.logo-search-cart .logo-pc {
   width: 16rem;
+  margin-bottom: 12px;
 }
-.logo-search-cart .logo-search-cart__logo__mobile {
+.logo-search-cart .logo-mobile {
   width: 3rem;
 }
-
-.search-box .search__input:focus ~ .search__result {
-  display: block;
+.search-box {
+  width: 95%;
+  position: relative;
 }
-.search-box .search__result {
-  display: none;
+.search-box .search-input {
+  border: 1px solid var(--gray-500);
+  background: var(--gray-0);
+  border-radius: 99px;
+  position: relative;
+  z-index: 5;
+}
+.search-box .search-input .search-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  font-size: 1.6em;
+}
+.search-box .search-input input {
+  width: calc(100% - 25px);
+  outline: none;
+  background: transparent;
+  border: none;
+}
+.search-box .result {
+  border: 1px solid var(--gray-500);
+  border-radius: 0 0 12px 12px;
+  position: absolute;
+  width: 100%;
+  z-index: 4;
+  top: 20px;
+  padding-top: 20px;
+}
+.search-box .result .wrap-scroll {
+  max-height: 200px;
+  overflow: auto;
+  border-bottom: 1px solid var(--gray-500);
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.search-box .result .wrap-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+.search-box .result .wrap-scroll::-webkit-scrollbar-track {
+  background: var(--gray-200);
+}
+.search-box .result .wrap-scroll::-webkit-scrollbar-thumb {
+  background: var(--gray-500);
+}
+.search-box .result .wrap-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-700);
+}
+.search-box .result .teachers p {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.search-box .result .teachers span {
+  transition: all 0.3s;
+}
+.search-box .result .teachers p:hover {
+  color: var(--blue);
+}
+.search-box .result .teachers p:hover span {
+  transform: scale(1.5);
+}
+.search-box .result .course {
+  transition: all 0.3s;
+}
+.search-box .result .course .course-avatar {
+  width: 30px;
+  height: 30px;
+}
+.search-box .result .course .course-info span {
+  color: var(--gray-600);
+}
+.search-box .result .course:hover {
+  background: var(--gray-200);
+  cursor: pointer;
+}
+.search-box .result .history p {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.search-box .result .history span {
+  transition: all 0.3s;
+}
+.search-box .result .history p:hover {
+  color: var(--orange);
+}
+.search-box .result .history p:hover span {
+  transform: scale(1.5);
 }
 
 /*# sourceMappingURL=main.css.map */

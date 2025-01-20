@@ -7,42 +7,54 @@
 // fixed info header block
 .fixed-info {
     background: var(--gray-200);
-    .fixed-info__hotline{
+
+    .fixed-info__hotline {
         transition: all .2s;
-        .hotline-icon{
+
+        .hotline-icon {
             color: var(--orange);
         }
-        &:hover{
+
+        &:hover {
             color: var(--orange);
         }
     }
-    .fixed-info__account{
-        .login{
+
+    .fixed-info__account {
+        .login {
             transition: all .2s;
-            .symbols{
+
+            .symbols {
                 color: var(--blue);
             }
-            &:hover{
+
+            &:hover {
                 transform: scale(1.05);
                 color: var(--blue);
             }
         }
-        .sign-up{
+
+        .sign-up {
             transition: all .2s;
-            .symbols{
+
+            .symbols {
                 color: var(--green);
             }
-            &:hover{
+
+            &:hover {
                 transform: scale(1.05);
                 color: var(--green);
             }
         }
-        .comment{
+
+        .comment {
             transition: all .2s;
-            .symbols{
+
+            .symbols {
                 color: var(--yellow);
             }
-            &:hover{
+
+            &:hover {
                 transform: scale(1.05);
                 color: var(--yellow);
             }
@@ -52,22 +64,118 @@
 
 // header block (logo search and card)
 .logo-search-cart {
-    .logo-search-cart__logo__pc {
+    .logo-pc {
         width: 16rem;
+        margin-bottom: 12px;
     }
 
-    .logo-search-cart__logo__mobile {
+    .logo-mobile {
         width: 3rem;
+    }
+    .cart{
     }
 }
 
-.search-box{
-    .search__input{
-        &:focus~.search__result{
+.search-box {
+    width: 95%;
+    position: relative;
+    .search-input {
+        border: 1px solid var(--gray-500);
+        background: var(--gray-0);
+        border-radius: 99px;
+        position: relative;
+        z-index: 5;
+        .search-icon {
+            width: 20px;
+            height: 20px;
             display: block;
+            font-size: 1.6em;
+        }
+        input {
+            width: calc(100% - 25px);
+            outline: none;
+            background: transparent;
+            border:none;
         }
     }
-    .search__result{
-        display:none;
+    .result{
+        border: 1px solid var(--gray-500);
+        border-radius:0 0 12px 12px;
+        position: absolute;
+        width: 100%;
+        z-index: 4;
+        top: 20px;
+        padding-top: 20px;
+        .wrap-scroll{
+            max-height: 200px;
+            overflow: auto;
+            border-bottom: 1px solid var(--gray-500);
+            &::-webkit-scrollbar {
+                width: 5px;
+              }
+              
+              /* Track */
+              &::-webkit-scrollbar-track {
+                background: var(--gray-200);
+              }
+              
+              /* Handle */
+              &::-webkit-scrollbar-thumb {
+                background: var(--gray-500);
+              }
+              
+              /* Handle on hover */
+              &::-webkit-scrollbar-thumb:hover {
+                background: var(--gray-700);
+              }
+        }
+        .teachers{
+            p{
+                transition: all .3s;
+                cursor: pointer;
+            }
+            span{
+                transition: all .3s;
+            }
+            p:hover{
+                color: var(--blue);
+                span{
+                    transform: scale(1.5);
+
+                }
+            }
+        }
+        .course{
+            transition: all .3s;
+            .course-avatar{
+                width: 30px;
+                height: 30px;
+            }
+            .course-info{
+                span{
+                    color: var(--gray-600);
+                }
+            }
+            &:hover{
+                background: var(--gray-200);
+                cursor: pointer;
+            }
+        }
+        .history{
+            p{
+                transition: all .3s;
+                cursor: pointer;
+            }
+            span{
+                transition: all .3s;
+            }
+            p:hover{
+                color: var(--orange);
+                span{
+                    transform: scale(1.5);
+                }
+            }
+        }
     }
+
 }

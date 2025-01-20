@@ -13,11 +13,13 @@
   --green:   #529839;
   --teal:    #20c997;
   --cyan:    #0dcaf0;
+  --white:   #fff;
+  --black:   #000; 
 }
 :root[theme="light"]{
   background: var(--white);
   color: var(--gray-800);
-  --white:   #fff;
+  --gray-0: #fff;
   --gray-100: #f8f9fa;
   --gray-200: #e9ecef;
   --gray-300: #dee2e6;
@@ -32,7 +34,8 @@
 :root[theme="dark"]{
   background: var(--gray-100);
   color: var(--gray-800);
-  --white:   #000;        /* Trắng chuyển thành đen */
+       /* Trắng chuyển thành đen */
+  --gray-0: #000;
   --gray-100: #212529;    /* Xám nhạt nhất -> đen nhạt */
   --gray-200: #343a40;
   --gray-300: #495057;
@@ -44,6 +47,7 @@
   --gray-900: #f8f9fa;    /* Xám đậm nhất -> xám nhạt nhất */
   --black:   #fff;      
 }
+
 
 @font-face {
     font-family: 'Material Symbols';

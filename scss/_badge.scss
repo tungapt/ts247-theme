@@ -40,3 +40,20 @@
         filter: brightness(1.7);
     }
 }
+.badge{
+    width: 17px;
+    height: 17px;
+    background: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius:99px;
+    position: absolute;
+    top:-8px;
+    right: -8px;
+    font-style: normal;
+    border: 1px solid var(--white);
+    font-size: 0.7rem;
+
+}

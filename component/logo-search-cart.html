@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="../css/main.css">
 
 <!DOCTYPE html>
-<html lang="en" theme="light">
+<html lang="en" theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,22 +10,75 @@
 </head>
 <body>
     <!-- copy here -->
-    <div class="logo-search-cart p-1">
+    <div class="logo-search-cart py-lg-4 py-2">
         <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <img class="logo-search-cart__logo__pc d-none d-sm-none d-md-block"
+            <div class="row g-1 g-sm-3">
+                <div class="col-2 col-sm-3">
+                    <img class="logo-pc d-none d-sm-none d-md-block"
                         src="../images/logo-pc.png" alt="">
-                    <img class="logo-search-cart__logo__mobile d-sm-block d-md-none"
+                    <img class="logo-mobile d-sm-block d-md-none"
                         src="../images/logo-mobile.webp" alt="">
                 </div>
-                <div class="col-6 d-flex align-items-center justify-content-center">
-                    <input placeholder="Tìm khóa học, giáo viên, id lời giải câu hỏi bạn quan tâm" type="text"
-                        style="width:100%">
+                <div class="col-8 col-sm-7 d-flex align-items-center">
+                    <div class="search-box">
+                        <div class="d-flex gap-2 p-2 align-items-center search-input">
+                            <span class="material-symbols-outlined search-icon">search</span>
+                            <input type="text" placeholder="Tìm khóa học, giáo viên, ID lời giải câu hỏi bạn quan tâm">
+                        </div>
+                        <div class="d-none d-flex flex-column result">
+                            <div class="p-a gap-3 d-flex flex-column wrap-scroll">
+                                <div class="d-flex gap-2 px-3 pt-3 flex-column teachers">
+                                    <div class="result-title fw-bold">Thông tin giáo viên</div>
+                                    <p class="d-flex gap-2 align-items-center"><span class="material-symbols-outlined">person</span>Thầy Nguyễn Văn Toản</p>
+                                    <p class="d-flex gap-2 align-items-center"><span class="material-symbols-outlined">person</span>Thầy Nguyễn Văn Toản</p>
+                                    <p class="d-flex gap-2 align-items-center"><span class="material-symbols-outlined">person</span>Thầy Nguyễn Văn Toản</p>
+                                </div>
+                                <div class="d-flex gap-2 flex-column">
+                                    <p class="fw-bold ps-3">Thông tin khóa học</p>
+                                    <div class="d-flex gap-2 px-3 py-2 course">
+                                        <img src="https://images.tuyensinh247.com/picture/2022/0622/600-imggv_7.png" alt="" class="course-avatar">
+                                        <div class="course-info">
+                                            <p>[S2] - Cô Hoàng Xuân - Luyện Thi TN THPT & ĐH & ĐGNL Môn Tiếng Anh - Năm 2025</p>
+                                            <span>trong Môn Tiếng Anh lớp 12 năm 2025</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-2 px-3 py-2 course">
+                                        <img src="https://images.tuyensinh247.com/picture/2022/0622/600-imggv_7.png" alt="" class="course-avatar">
+                                        <div class="course-info">
+                                            <p>[S2] - Cô Hoàng Xuân - Luyện Thi TN THPT & ĐH & ĐGNL Môn Tiếng Anh - Năm 2025</p>
+                                            <span>trong Môn Tiếng Anh lớp 12 năm 2025</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-2 px-3 py-2 course">
+                                        <img src="https://images.tuyensinh247.com/picture/2022/0622/600-imggv_7.png" alt="" class="course-avatar">
+                                        <div class="course-info">
+                                            <p>[S2] - Cô Hoàng Xuân - Luyện Thi TN THPT & ĐH & ĐGNL Môn Tiếng Anh - Năm 2025</p>
+                                            <span>trong Môn Tiếng Anh lớp 12 năm 2025</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2 px-3 py-2 flex-column gap-2 history">
+                                <p class="result-title fw-bold">Lịch sử tìm kiếm</p>
+                                <p class="d-flex align-center gap-2">
+                                    <span class="material-symbols-outlined">history</span>Thầy Nguyễn công nguyên
+                                </p>
+                                <p class="d-flex align-center gap-2">
+                                    <span class="material-symbols-outlined">history</span>Cô Nguyễn Loan
+                                </p>
+                                <p class="d-flex align-center gap-2">
+                                    <span class="material-symbols-outlined">history</span>Thầy Trần Tùng
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-3 d-flex align-items-center justify-content-end">
-                    <button class="ts247-btn-primary d-flex gap-1 align-items-center"><span
-                            class="material-symbols-outlined">shopping_cart</span> Giỏ hàng của tôi</button>
+                <div class="col-2 col-sm-2 d-flex align-items-center justify-content-end">
+                    <button class="ts247-btn-primary d-flex gap-1 align-items-center position-relative cart">
+                        <span class="material-symbols-outlined fill">shopping_cart</span>
+                        <span class="d-none d-sm-block">Giỏ hàng của tôi</span>
+                        <i class="badge">5</i>
+                    </button>
                 </div>
             </div>
         </div>
