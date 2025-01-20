@@ -2,15 +2,52 @@
 <link rel="stylesheet" href="../css/main.css">
 
 <!DOCTYPE html>
-<html lang="en" theme="dark">
+<html lang="en" theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    <div class="fixed-info sticky-top p-2">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-7">
+                    <a href="tel:024.7300.7989" class="d-flex align-items-center gap-1 fixed-info__hotline">
+                        <span class="material-symbols-outlined fill hotline-icon">call</span>
+                        <span class="d-block d-lg-none">024.7300.7989</span>
+                        <span class="d-none d-lg-block"> Tel: 024.7300.7989 - Phone: 1800.6947 (Thời gian hỗ trợ từ 7h đến 22h)</span>
+                    </a>
+                </div>
+                <div class="col col-md-5">
+                    <div class="d-flex align-items-center justify-content-end gap-3 fixed-info__account">
+                        <a href="#" class="d-flex align-items-center gap-1 theme" href="javascript:void(0)">
+                            <span class="material-symbols-outlined symbols fill">dark_mode</span> <span class="d-none d-lg-flex">Chủ đề</span>
+                            <ul class="d-none list-theme">
+                                <li>Sáng</li>
+                                <li>Tối</li>
+                                <li>Mùa xuân</li>
+                                <li>Mùa hạ</li>
+                                <li>Mùa thu</li>
+                                <li>Mùa Đông</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="d-flex align-items-center gap-1 login" href="javascript:void(0)">
+                            <span class="material-symbols-outlined symbols fill">person</span> <span>Đăng nhập</span>
+                        </a>
+                        <a href="#" class="d-lg-flex align-items-center gap-1 d-none d-lg-block sign-up" href="javascript:void(0)">
+                            <span class="material-symbols-outlined symbols fill">edit_square</span> <span>Đăng kí</span>
+                        </a>
+                        <a href="#" class="d-lg-flex align-items-center gap-1 d-none d-lg-block comment" href="javascript:void(0)">
+                            <span class="material-symbols-outlined symbols fill">lightbulb</span> <span>Góp ý</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- copy here -->
-    <div class="logo-search-cart py-lg-4 py-2">
+    <div class="logo-search-cart py-lg-4 py-3">
         <div class="container">
             <div class="row g-1 g-sm-3">
                 <div class="col-2 col-sm-3">
@@ -23,7 +60,8 @@
                     <div class="search-box">
                         <div class="d-flex gap-2 p-2 align-items-center search-input">
                             <span class="material-symbols-outlined search-icon">search</span>
-                            <input type="text" placeholder="Tìm khóa học, giáo viên, ID lời giải câu hỏi bạn quan tâm">
+                            <input type="text" class="d-none d-md-block" placeholder="Tìm khóa học, giáo viên, ID lời giải câu hỏi bạn quan tâm">
+                            <input type="text" class="d-md-none" placeholder="Tìm kiếm">
                         </div>
                         <div class="d-none d-flex flex-column result">
                             <div class="p-a gap-3 d-flex flex-column wrap-scroll">
@@ -73,12 +111,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2 col-sm-2 d-flex align-items-center justify-content-end">
-                    <button class="ts247-btn-primary d-flex gap-1 align-items-center position-relative cart">
+                <div class="col-2 gap-1 col-sm-2 d-flex align-items-center justify-content-end">
+                    <div class="d-flex gap-1 align-items-center p-2 px-sm-3 py-sm-2 position-relative cart">
                         <span class="material-symbols-outlined fill">shopping_cart</span>
-                        <span class="d-none d-sm-block">Giỏ hàng của tôi</span>
+                        <p class="d-none d-sm-block">Giỏ hàng của tôi</p>
                         <i class="badge">5</i>
-                    </button>
+                    </div>
                 </div>
             </div>
         </div>

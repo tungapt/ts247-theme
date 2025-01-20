@@ -50,6 +50,78 @@
   --black: #fff;
 }
 
+:root[theme=spring] {
+  background: #fefae0; /* Màu kem nhạt, tượng trưng cho sự ấm áp */
+  color: #283618; /* Màu xanh lá đậm, đại diện cho sức sống */
+  --primary: #80b918; /* Xanh lá cây tươi sáng */
+  --secondary: #ffcb77; /* Cam dịu */
+  --accent: #d4a373; /* Màu nâu nhạt, thể hiện sự gần gũi */
+  --gray-0: #f9fce5;
+  --gray-100: #eaf4d3;
+  --gray-200: #d5e3b5;
+  --gray-300: #b7c998;
+  --gray-400: #a3b884;
+  --gray-500: #889f6a;
+  --gray-600: #6e8650;
+  --gray-700: #536c3a;
+  --gray-800: #3b5225;
+  --gray-900: #283618;
+}
+
+:root[theme=summer] {
+  background: #caf0f8; /* Xanh biển nhạt, tượng trưng cho bầu trời mùa hè */
+  color: #03045e; /* Xanh đậm, thể hiện sự năng động */
+  --primary: #00b4d8; /* Xanh biển sáng */
+  --secondary: #ffbe0b; /* Vàng rực rỡ, như ánh nắng */
+  --accent: #fb8500; /* Cam đậm, biểu tượng sự rực rỡ */
+  --gray-0: #eafafc;
+  --gray-100: #d3f2f8;
+  --gray-200: #b2e6f1;
+  --gray-300: #88d8ea;
+  --gray-400: #56c8e0;
+  --gray-500: #3db1cb;
+  --gray-600: #3292ab;
+  --gray-700: #276e82;
+  --gray-800: #1b4959;
+  --gray-900: #03045e;
+}
+
+:root[theme=autumn] {
+  background: #fff3e0; /* Cam kem nhạt, tạo cảm giác ấm áp */
+  color: #6a3706; /* Nâu đất, đại diện cho lá rụng */
+  --primary: #ff6f3c; /* Cam đỏ, sắc thái của lá thu */
+  --secondary: #ffc300; /* Vàng sậm, như lá khô */
+  --accent: #8c4f00; /* Nâu vàng đậm */
+  --gray-0: #fff7ed;
+  --gray-100: #ffe8d2;
+  --gray-200: #ffddb9;
+  --gray-300: #ffcb9a;
+  --gray-400: #ffa36c;
+  --gray-500: #ff8652;
+  --gray-600: #e36435;
+  --gray-700: #bf4719;
+  --gray-800: #9a3b0e;
+  --gray-900: #6a3706;
+}
+
+:root[theme=winter] {
+  background: #e0f7fa; /* Xanh nhạt, cảm giác lạnh và tươi mát */
+  color: #004d40; /* Xanh rêu đậm, mang lại sự tĩnh lặng */
+  --primary: #0097a7; /* Xanh biển lạnh */
+  --secondary: #80deea; /* Xanh nhạt mờ, như sương tuyết */
+  --accent: #cfd8dc; /* Xám lạnh */
+  --gray-0: #f0fafd;
+  --gray-100: #e0f7fa;
+  --gray-200: #b3ebf2;
+  --gray-300: #80deea;
+  --gray-400: #4dd0e1;
+  --gray-500: #26c6da;
+  --gray-600: #00acc1;
+  --gray-700: #00838f;
+  --gray-800: #005662;
+  --gray-900: #004d40;
+}
+
 @font-face {
   font-family: "Material Symbols";
   font-style: normal;
@@ -180,6 +252,12 @@ table {
   border: 1px solid var(--white);
   font-size: 0.7rem;
 }
+@media all and (min-width: 320px) and (max-width: 575px) {
+  .badge {
+    top: -4px;
+    right: -4px;
+  }
+}
 
 .ts247-btn {
   background: transparent;
@@ -278,6 +356,26 @@ table {
   transform: scale(1.05);
   color: var(--yellow);
 }
+.fixed-info .fixed-info__account .theme {
+  transition: all 0.2s;
+  position: relative;
+}
+.fixed-info .fixed-info__account .theme .symbols {
+  color: var(--indigo);
+}
+.fixed-info .fixed-info__account .theme:hover {
+  transform: scale(1.05);
+  color: var(--indigo);
+}
+.fixed-info .fixed-info__account .theme .list-theme {
+  position: absolute;
+  background: var(--gray-200);
+  top: 30px;
+  width: 200px;
+}
+.fixed-info .fixed-info__account .theme .list-theme li {
+  width: 50%;
+}
 
 .logo-search-cart .logo-pc {
   width: 16rem;
@@ -286,9 +384,38 @@ table {
 .logo-search-cart .logo-mobile {
   width: 3rem;
 }
+.logo-search-cart .cart {
+  background: var(--blue);
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--white);
+}
+.logo-search-cart .cart span.material-symbols-outlined {
+  transition: all 0.2s;
+}
+@media all and (min-width: 320px) and (max-width: 575px) {
+  .logo-search-cart .cart span.material-symbols-outlined {
+    font-size: 1.8rem;
+  }
+}
+.logo-search-cart .cart:hover span {
+  transform: scale(1.07);
+}
+@media all and (min-width: 320px) and (max-width: 575px) {
+  .logo-search-cart .cart {
+    background: transparent;
+    color: var(--blue);
+  }
+}
+
 .search-box {
   width: 95%;
   position: relative;
+}
+@media all and (min-width: 320px) and (max-width: 575px) {
+  .search-box {
+    width: 100%;
+  }
 }
 .search-box .search-input {
   border: 1px solid var(--gray-500);
@@ -304,10 +431,15 @@ table {
   font-size: 1.6em;
 }
 .search-box .search-input input {
-  width: calc(100% - 25px);
+  width: 100%;
   outline: none;
   background: transparent;
   border: none;
+}
+@media all and (min-width: 576px) and (max-width: 991px) {
+  .search-box .search-input input {
+    width: 100%;
+  }
 }
 .search-box .result {
   border: 1px solid var(--gray-500);

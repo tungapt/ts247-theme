@@ -55,5 +55,8 @@
     font-style: normal;
     border: 1px solid var(--white);
     font-size: 0.7rem;
-
+    @include small{
+        top:-4px;
+        right:-4px;
+    }
 }

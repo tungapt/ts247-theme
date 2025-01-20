@@ -48,6 +48,79 @@
   --black:   #fff;      
 }
 
+:root[theme=spring] {
+  background: #fefae0; /* Màu kem nhạt, tượng trưng cho sự ấm áp */
+  color: #283618; /* Màu xanh lá đậm, đại diện cho sức sống */
+  --primary: #80b918; /* Xanh lá cây tươi sáng */
+  --secondary: #ffcb77; /* Cam dịu */
+  --accent: #d4a373; /* Màu nâu nhạt, thể hiện sự gần gũi */
+  --gray-0: #f9fce5;
+  --gray-100: #eaf4d3;
+  --gray-200: #d5e3b5;
+  --gray-300: #b7c998;
+  --gray-400: #a3b884;
+  --gray-500: #889f6a;
+  --gray-600: #6e8650;
+  --gray-700: #536c3a;
+  --gray-800: #3b5225;
+  --gray-900: #283618;
+}
+
+:root[theme=summer] {
+  background: #caf0f8; /* Xanh biển nhạt, tượng trưng cho bầu trời mùa hè */
+  color: #03045e; /* Xanh đậm, thể hiện sự năng động */
+  --primary: #00b4d8; /* Xanh biển sáng */
+  --secondary: #ffbe0b; /* Vàng rực rỡ, như ánh nắng */
+  --accent: #fb8500; /* Cam đậm, biểu tượng sự rực rỡ */
+  --gray-0: #eafafc;
+  --gray-100: #d3f2f8;
+  --gray-200: #b2e6f1;
+  --gray-300: #88d8ea;
+  --gray-400: #56c8e0;
+  --gray-500: #3db1cb;
+  --gray-600: #3292ab;
+  --gray-700: #276e82;
+  --gray-800: #1b4959;
+  --gray-900: #03045e;
+}
+
+:root[theme=autumn] {
+  background: #fff3e0; /* Cam kem nhạt, tạo cảm giác ấm áp */
+  color: #6a3706; /* Nâu đất, đại diện cho lá rụng */
+  --primary: #ff6f3c; /* Cam đỏ, sắc thái của lá thu */
+  --secondary: #ffc300; /* Vàng sậm, như lá khô */
+  --accent: #8c4f00; /* Nâu vàng đậm */
+  --gray-0: #fff7ed;
+  --gray-100: #ffe8d2;
+  --gray-200: #ffddb9;
+  --gray-300: #ffcb9a;
+  --gray-400: #ffa36c;
+  --gray-500: #ff8652;
+  --gray-600: #e36435;
+  --gray-700: #bf4719;
+  --gray-800: #9a3b0e;
+  --gray-900: #6a3706;
+}
+
+:root[theme=winter] {
+  background: #e0f7fa; /* Xanh nhạt, cảm giác lạnh và tươi mát */
+  color: #004d40; /* Xanh rêu đậm, mang lại sự tĩnh lặng */
+  --primary: #0097a7; /* Xanh biển lạnh */
+  --secondary: #80deea; /* Xanh nhạt mờ, như sương tuyết */
+  --accent: #cfd8dc; /* Xám lạnh */
+  --gray-0: #f0fafd;
+  --gray-100: #e0f7fa;
+  --gray-200: #b3ebf2;
+  --gray-300: #80deea;
+  --gray-400: #4dd0e1;
+  --gray-500: #26c6da;
+  --gray-600: #00acc1;
+  --gray-700: #00838f;
+  --gray-800: #005662;
+  --gray-900: #004d40;
+}
+
+
 
 @font-face {
     font-family: 'Material Symbols';
