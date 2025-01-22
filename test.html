@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en" theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="js/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <section class="header">
+        <div class="fixed-info sticky-top p-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-md-7">
+                        <a href="tel:024.7300.7989" class="d-flex align-items-center gap-1 fixed-info__hotline">
+                            <span class="material-symbols-outlined fill hotline-icon">call</span>
+                            <span class="d-block d-lg-none">024.7300.7989</span>
+                            <span class="d-none d-lg-block"> Tel: 024.7300.7989 - Phone: 1800.6947 (Thời gian hỗ trợ từ 7h đến 22h)</span>
+                        </a>
+                    </div>
+                    <div class="col col-md-5">
+                        <div class="d-flex align-items-center justify-content-end gap-3 fixed-info__account">
+                            <div class="wrap-menu">
+                                <a href="#" class="d-flex align-items-center gap-1 theme" href="javascript:void(0)">
+                                    <span class="material-symbols-outlined symbols fill">dark_mode</span> <span class="d-none d-lg-flex">Chủ đề</span>
+                                </a>
+                                <ul class="list-theme">
+                                    <li data-name="light">Sáng</li>
+                                    <li data-name="dark">Tối</li>
+                                    <li data-name="spring">Mùa xuân</li>
+                                    <li data-name="summer">Mùa hạ</li>
+                                    <li data-name="autumn">Mùa thu</li>
+                                    <li data-name="winter">Mùa Đông</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="d-flex align-items-center gap-1 login" href="javascript:void(0)">
+                                <span class="material-symbols-outlined symbols fill">person</span> <span>Đăng nhập</span>
+                            </a>
+                            <a href="#" class="d-lg-flex align-items-center gap-1 d-none d-lg-block sign-up" href="javascript:void(0)">
+                                <span class="material-symbols-outlined symbols fill">edit_square</span> <span>Đăng kí</span>
+                            </a>
+                            <a href="#" class="d-lg-flex align-items-center gap-1 d-none d-lg-block comment" href="javascript:void(0)">
+                                <span class="material-symbols-outlined symbols fill">lightbulb</span> <span>Góp ý</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logo-search-cart py-lg-4 py-3">
+            <div class="container">
+                <div class="row g-1 g-sm-3">
+                    <div class="col-2 col-sm-3">
+                        <img class="logo-pc d-none d-sm-none d-md-block"
+                            src="images/logo-pc.png" alt="">
+                        <img class="logo-mobile d-sm-block d-md-none"
+                            src="images/logo-mobile.webp" alt="">
+                    </div>
+                    <div class="col-8 col-sm-7 d-flex align-items-center">
+                        <div class="search-box">
+                            <div class="d-flex gap-2 p-2 align-items-center search-input">
+                                <span class="material-symbols-outlined search-icon">search</span>
+                                <input type="text" class="d-none d-md-block" placeholder="Tìm khóa học, giáo viên, ID lời giải câu hỏi bạn quan tâm">
+                                <input type="text" class="d-md-none" placeholder="Tìm kiếm">
+                            </div>
+                            <div class="d-none d-flex flex-column result">
+                                <div class="p-a gap-3 d-flex flex-column wrap-scroll">
+                                    <div class="d-flex gap-2 px-3 pt-3 flex-column teachers">
+                                        <div class="result-title fw-bold">Thông tin giáo viên</div>
+                                        <p class="d-flex gap-2 align-items-center"><span class="material-symbols-outlined">person</span>Thầy Nguyễn Văn Toản</p>
+                                        <p class="d-flex gap-2 align-items-center"><span class="material-symbols-outlined">person</span>Thầy Nguyễn Văn Toản</p>
+                                        <p class="d-flex gap-2 align-items-center"><span class="material-symbols-outlined">person</span>Thầy Nguyễn Văn Toản</p>
+                                    </div>
+                                    <div class="d-flex gap-2 flex-column">
+                                        <p class="fw-bold ps-3">Thông tin khóa học</p>
+                                        <div class="d-flex gap-2 px-3 py-2 course">
+                                            <img src="https://images.tuyensinh247.com/picture/2022/0622/600-imggv_7.png" alt="" class="course-avatar">
+                                            <div class="course-info">
+                                                <p>[S2] - Cô Hoàng Xuân - Luyện Thi TN THPT & ĐH & ĐGNL Môn Tiếng Anh - Năm 2025</p>
+                                                <span>trong Môn Tiếng Anh lớp 12 năm 2025</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-2 px-3 py-2 course">
+                                            <img src="https://images.tuyensinh247.com/picture/2022/0622/600-imggv_7.png" alt="" class="course-avatar">
+                                            <div class="course-info">
+                                                <p>[S2] - Cô Hoàng Xuân - Luyện Thi TN THPT & ĐH & ĐGNL Môn Tiếng Anh - Năm 2025</p>
+                                                <span>trong Môn Tiếng Anh lớp 12 năm 2025</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-2 px-3 py-2 course">
+                                            <img src="https://images.tuyensinh247.com/picture/2022/0622/600-imggv_7.png" alt="" class="course-avatar">
+                                            <div class="course-info">
+                                                <p>[S2] - Cô Hoàng Xuân - Luyện Thi TN THPT & ĐH & ĐGNL Môn Tiếng Anh - Năm 2025</p>
+                                                <span>trong Môn Tiếng Anh lớp 12 năm 2025</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-2 px-3 py-2 flex-column gap-2 history">
+                                    <p class="result-title fw-bold">Lịch sử tìm kiếm</p>
+                                    <p class="d-flex align-center gap-2">
+                                        <span class="material-symbols-outlined">history</span>Thầy Nguyễn công nguyên
+                                    </p>
+                                    <p class="d-flex align-center gap-2">
+                                        <span class="material-symbols-outlined">history</span>Cô Nguyễn Loan
+                                    </p>
+                                    <p class="d-flex align-center gap-2">
+                                        <span class="material-symbols-outlined">history</span>Thầy Trần Tùng
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 gap-1 col-sm-2 d-flex align-items-center justify-content-end">
+                        <div class="d-flex gap-1 align-items-center p-2 px-sm-3 py-sm-2 position-relative cart">
+                            <span class="material-symbols-outlined fill">shopping_cart</span>
+                            <p class="d-none d-sm-block">Giỏ hàng của tôi</p>
+                            <i class="badge">5</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-bar-pc d-none d-lg-block">
+            <div class="container">
+                <ul class="d-lg-flex align-items-center menu-bar__parent">
+                    <li><a href="javascript:void(0)" class="material-symbols-outlined fill">other_houses</a></li>
+                    <li><a href="javascript:void(0)">Combo</a></li>
+                    <li><a class="d-flex align-items-center gap-2" href="javascript:void(0)">Sách <span
+                                class="material-symbols-outlined fill">fiber_new</span></a></li>
+                    <li><a href="javascript:void(0)">Giới thiệu</a></li>
+                    <li><a href="javascript:void(0)">Giáo viên</a></li>
+                    <li>
+                        <a class="d-flex align-items-center" href="javascript:void(0)">Học thử miễn phí <span
+                                class="material-symbols-outlined">arrow_drop_down</span></a>
+                        <ul class="menu-bar__child">
+                            <li><a href="javascript:void(0)">Lớp 12 - ôn thi ĐGNL/ĐGTD</a></li>
+                            <li><a href="javascript:void(0)">Lớp 12 - ôn thi TN THPT/ĐH ĐGNL/ĐGTD</a></li>
+                            <li><a href="javascript:void(0)">Lớp 12</a></li>
+                            <li><a href="javascript:void(0)">Lớp 11</a></li>
+                            <li><a href="javascript:void(0)">Lớp 10</a></li>
+                            <li><a href="javascript:void(0)">Lớp 9</a></li>
+                            <li><a href="javascript:void(0)">Lớp 8</a></li>
+                            <li><a href="javascript:void(0)">Lớp 7</a></li>
+                            <li><a href="javascript:void(0)">Lớp 6</a></li>
+                            <li><a href="javascript:void(0)">Lớp 5</a></li>
+                            <li><a href="javascript:void(0)">Lớp 4</a></li>
+                            <li><a href="javascript:void(0)">Lớp 3</a></li>
+                            <li><a href="javascript:void(0)">Lớp 2</a></li>
+                            <li><a href="javascript:void(0)">Lớp 1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Thông báo</a></li>
+                    <li><a href="javascript:void(0)">Nạp tiền</a></li>
+                    <li><a class="code-active d-flex align-items-center gap-2" href="javascript:void(0)"><span
+                                class="material-symbols-outlined">qr_code_scanner</span>Kích hoạt</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="d-flex d-lg-none align-items-center menu-bar-mobile">
+            <li class="combo">
+                <div class="wrap">
+                    <span class="material-symbols-outlined">inventory_2</span>
+                    <p>COMBO</p>
+                    <i class="badge">2</i>
+                </div>
+            </li>
+            <li class="book">
+                <div class="wrap">
+                    <span class="material-symbols-outlined">menu_book</span>
+                    <p>SÁCH</p>
+                    <i class="badge">3</i>
+                </div>
+            </li>      
+            <li class="school">
+                <span class="material-symbols-outlined">
+                    school
+                </span>
+                <p>GIÁO VIÊN</p>
+            </li>
+            <li class="home">
+                <span class="material-symbols-outlined">home</span>
+                <p>HOME</p>
+            </li>
+            <li class="study">
+                <div class="wrap">
+                    <span class="material-symbols-outlined">
+                        play_circle
+                    </span>
+                    <p>HỌC THỬ</p>
+                </div>
+            </li>
+            <li class="notify">
+                <div class="wrap">
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+                    <p>Thông báo</p>
+                    <i class="badge">1</i>
+                </div>
+            </li>
+            <li class="notify">
+                <div class="wrap">
+                    <span class="material-symbols-outlined">
+                        account_circle
+                    </span>
+                    <p>Cá nhân</p>
+                </div>
+            </li>
+        </ul>
+        <div class="notification d-none d-lg-block py-lg-3 py-lg-2">
+            <div class="container">
+                <div class="d-flex gap-1 align-items-center">
+                    <span class="material-symbols-outlined fill">notifications</span>
+                    <ul class="notification__news">
+                        <li><a href="javascript:void(0)">2K7! Luyện thi Đánh giá năng lực, Đánh giá tư duy 2025 (Lộ
+                                trình SUN 2025) | Tuyensinh247.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mb-2 mb-lg-3 body">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <ul class="d-none d-lg-block menu_left">
+                        <li>
+                            <a class="d-flex align-items-center justify-content-between" href="javascript:void(0)">Ôn luyện ĐGTD, ĐGNL <i class="icon-hot effect-to-left"></i></a>
+                            <div class="menu_left__child">
+                                <div class="d-flex flex-column gap-3 p-3 menu_left__child__wrap">
+                                    <div class="child-item d-flex flex-column gap-2">
+                                        <h3>VIDEO - Lộ trình SUN - Ôn luyện ĐGNL, ĐGTD - 2025</h3>
+                                        <div class="row">
+                                            <div class="col-4"><a class="d-flex gap-2" href="#"><span
+                                                        class="material-symbols-outlined">play_circle</span> Đánh
+                                                    giá năng lực Hà Nội</a></div>
+                                            <div class="col-4"><a class="d-flex gap-2" href="#"><span
+                                                        class="material-symbols-outlined">play_circle</span> Đánh
+                                                    giá tư duy Bách Khoa</a></div>
+                                            <div class="col-4"><a class="d-flex gap-2" href="#"><span
+                                                        class="material-symbols-outlined">play_circle</span> Đánh
+                                                    giá năng lực Hồ Chí Minh</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="child-item d-flex flex-column gap-2">
+                                        <h3>LIVE - Ôn luyện ĐGNL, ĐGTD - 2025</h3>
+                                        <div class="row">
+                                            <div class="col-4"><a class="d-flex gap-2 align-items-center"
+                                                    href="#"><i class="icon-live"></i> Đánh giá năng lực Hà Nội</a>
+                                            </div>
+                                            <div class="col-4"><a class="d-flex gap-2 align-items-center"
+                                                    href="#"><i class="icon-live"></i> Đánh giá tư duy Bách Khoa</a>
+                                            </div>
+                                            <div class="col-4"><a class="d-flex gap-2 align-items-center"
+                                                    href="#"><i class="icon-live"></i> Đánh giá năng lực Hồ Chí
+                                                    Minh</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="d-flex align-items-center justify-content-between"
+                                href="javascript:void(0)">LỚP 12 - 2K7 - SUN 2025 <i
+                                    class="icon-new nhap-nhay"></i></a>
+                            <div class="menu_left__child">
+                                <div
+                                    class="d-flex flex-column gap-3 p-3 menu_left__child__wrap">
+                                    <div class="child-item d-flex flex-column gap-2">
+                                        <h3>LỚP 12 - LUYỆN THI TN THPT - ĐH, ĐGNL & ĐGTD</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Toán</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Văn</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Anh</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="d-flex align-items-center justify-content-between"
+                                href="javascript:void(0)">LỚP 11 - 2K8</a>
+                            <div class="menu_left__child">
+                                <div
+                                    class="d-flex flex-column gap-3 p-3 menu_left__child__wrap">
+                                    <div class="child-item d-flex flex-column gap-2">
+                                        <h3>LỚP 11 - 2k8</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Toán</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Văn</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Anh</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="d-flex align-items-center justify-content-between"
+                                href="javascript:void(0)">LỚP 10 - 2K9</a>
+                            <div class="menu_left__child">
+                                <div
+                                    class="d-flex flex-column gap-3 p-3 menu_left__child__wrap">
+                                    <div class="child-item d-flex flex-column gap-2">
+                                        <h3>LỚP 10 - 2K9</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Toán</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Văn</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Anh</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="d-flex align-items-center justify-content-between"
+                                href="javascript:void(0)">LỚP 9 - 2K10 <i class="icon-new nhap-nhay"></i></a>
+                            <div class="menu_left__child">
+                                <div
+                                    class="d-flex flex-column gap-3 p-3 menu_left__child__wrap">
+                                    <div class="child-item d-flex flex-column gap-2">
+                                        <h3>LỚP 9 - 2K10</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Toán</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Văn</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Anh</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="d-flex align-items-center justify-content-between"
+                                href="javascript:void(0)">LỚP 8 - 2K11</a>
+                            <div class="menu_left__child">
+                                <div
+                                    class="d-flex flex-column gap-3 p-3 menu_left__child__wrap">
+                                    <div class="child-item d-flex flex-column gap-2">
+                                        <h3>LỚP 8 - 2K11</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Toán</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Văn</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Anh</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="d-flex align-items-center justify-content-between"
+                                href="javascript:void(0)">LỚP 7 - 2K12</a>
+                            <div class="menu_left__child">
+                                <div
+                                    class="d-flex flex-column gap-3 p-3 menu_left__child__wrap">
+                                    <div class="child-item d-flex flex-column gap-2">
+                                        <h3>LỚP 7 - 2K12</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Toán</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Văn</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Anh</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="d-flex align-items-center justify-content-between"
+                                href="javascript:void(0)">LỚP 6 - 2K13</a>
+                            <div class="menu_left__child">
+                                <div
+                                    class="d-flex flex-column gap-3 p-3 menu_left__child__wrap">
+                                    <div class="child-item d-flex flex-column gap-2">
+                                        <h3>LỚP 6 - 2K13</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Toán</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Văn</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Anh</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="d-flex align-items-center justify-content-between"
+                                href="javascript:void(0)">LỚP 5 - 2K14</a>
+                            <div class="menu_left__child">
+                                <div
+                                    class="d-flex flex-column gap-3 p-3 menu_left__child__wrap">
+                                    <div class="child-item d-flex flex-column gap-2">
+                                        <h3>LỚP 5 - 2K14</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Toán</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Văn</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Anh</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="d-flex align-items-center justify-content-between"
+                                href="javascript:void(0)">LỚP 4 - LỚP 3 - LỚP 2 - LỚP 1</a>
+                            <div class="menu_left__child">
+                                <div
+                                    class="d-flex flex-column gap-3 p-3 menu_left__child__wrap">
+                                    <div class="child-item d-flex flex-column gap-2">
+                                        <h3>LỚP 4 - 2K15</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Toán</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Văn</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Anh</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="child-item d-flex flex-column gap-2">
+                                        <h3>LỚP 3 - 2K16</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Toán</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Văn</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Anh</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="child-item d-flex flex-column gap-2">
+                                        <h3>LỚP 2 - 2K17</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Toán</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Văn</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Anh</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="child-item d-flex flex-column gap-2">
+                                        <h3>LỚP 1 - 2K18</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Toán</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="d-flex align-items-center justify-content-between"
+                                href="javascript:void(0)">SÁCH THAM KHẢO <i class="icon-hot effect-to-left"></i></a>
+                            <div class="menu_left__child">
+                                <div
+                                    class="d-flex flex-column gap-3 p-3 menu_left__child__wrap">
+                                    <div class="child-item d-flex flex-column gap-2">
+                                        <h3>LỚP 4 - 2K15</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Toán</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Văn</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Anh</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="child-item d-flex flex-column gap-2">
+                                        <h3>LỚP 3 - 2K16</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Toán</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Văn</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Anh</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="child-item d-flex flex-column gap-2">
+                                        <h3>LỚP 2 - 2K17</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Toán</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Văn</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Anh</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="child-item d-flex flex-column gap-2">
+                                        <h3>LỚP 1 - 2K18</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <a href="#"
+                                                    class="child-item--subject">
+                                                    <div class="d-flex gap-2">
+                                                        <span class="material-symbols-outlined">subject</span>
+                                                        <span class="fw-semibold text-uppercase">Toán</span>
+                                                    </div>
+                                                    <ul class="d-flex align-items-center gap-2 ps-1">
+                                                        <li>T. Long</li>
+                                                        <li>|</li>
+                                                        <li>C. Loan</li>
+                                                        <li>|</li>
+                                                        <li>T. Tùng</li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-9">
+                    <div class="d-none d-lg-flex flex-wrap gap-2 ads-center">
+                        <a class="ads1" href="#"><img
+                                src="https://images.tuyensinh247.com/picture/article/2024/1118/resize_835x96-ts.png"
+                                alt=""></a>
+                        <a class="ads2" href="#"><img
+                                src="https://images.tuyensinh247.com/picture/article/2024/1223/resize_490x200-ts-14.png"
+                                alt=""></a>
+                        <a class="ads3" href="#"><img
+                                src="https://images.tuyensinh247.com/picture/article/2024/1026/resize_315x200-ts-4.png"
+                                alt=""></a>
+                        <a class="ads1" href="#"><img
+                            src="https://images.tuyensinh247.com/picture/article/2024/1118/resize_835x96-ts.png"
+                            alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3 row">
+                <div class="col-3">
+                    <div class="support ts247-card">
+                        <p class="d-flex align-items-center gap-2">
+                            <span class="material-symbols-outlined">support</span>
+                            <span class="fw-bold">HỖ TRỢ - HƯỚNG DẪN</span>
+                        </p>
+                        <p class="description">
+                            Bạn có thể liên hệ với chúng tôi qua số điện thoại <a href="tel:024.7300.7989" class="fw-bold">024.7300.7989</a> hoặc hotline miễn phí <a href="tel:024.7300.7989" class="fw-bold">1800.6947</a> (hoạt động từ 7h đến 22h hằng ngày). <br> Ngoài ra, mọi thắc mắc cũng có thể gửi về email: <span href="#" class="fw-bold">lienhe@tuyensinh247.com</span>.
+                        </p>
+                        <div class="d-flex align-items-center justify-content-between gap-1 actions">
+                            <div class="d-flex gap-1 pref">
+                                <a href="#">Đăng nhập</a>
+                                <a href="#">Đăng ký</a>
+                            </div>
+                            <button class="ts247-btn">
+                                Nạp tiền vào tài khoản
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="favior-teachers ts247-card">
+                        <h3 class="favior-teachers__title text-uppercase d-flex align-items-center gap-2 mb-3">
+                            Giáo viên được yêu thích THPT - THCS - TIỂU HỌC
+                        </h3>
+                        <div class="favior-teachers__body">
+                            <div class="row g-2">
+                                <div class="col col-lg-2">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/2.png" alt=""></a></div>
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/1.png" alt=""></a></div>
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/1.png" alt=""></a></div>
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/1.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-2">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/2.png" alt=""></a></div>
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/1.png" alt=""></a></div>
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/1.png" alt=""></a></div>
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/1.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-2">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/2.png" alt=""></a></div>
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/1.png" alt=""></a></div>
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/1.png" alt=""></a></div>
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/1.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-2">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/2.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-2">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/2.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-2">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/2.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-2">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/2.png" alt=""></a></div>
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/1.png" alt=""></a></div>
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/1.png" alt=""></a></div>
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/1.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-2">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/2.png" alt=""></a></div>
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/1.png" alt=""></a></div>
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/1.png" alt=""></a></div>
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/1.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-2">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/2.png" alt=""></a></div>
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/1.png" alt=""></a></div>
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/1.png" alt=""></a></div>
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/1.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-2">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/2.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-2">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/2.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-2">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                          <div class="swiper-slide"><a href=""><img src="images/demo/2.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            handleChangeTheme();
+            handleMenuMobile();
+            initSliderTeacher();
+        });
+        function handleChangeTheme(){
+            // Chọn tất cả các phần tử <li> trong danh sách
+            const themeItems = document.querySelectorAll('.list-theme li');
+
+            // Lặp qua từng phần tử <li> và thêm sự kiện click
+            themeItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    // Lấy giá trị của thuộc tính data-name
+                    const themeName = item.getAttribute('data-name');
+
+                    // Gán giá trị vào thuộc tính theme của thẻ <html>
+                    document.documentElement.setAttribute('theme', themeName);
+                });
+            });
+        }
+        function handleMenuMobile(){
+            // Lấy tất cả các mục li trong menu
+            const menuItems = document.querySelectorAll(".menu-bar-mobile li");
+    
+            menuItems.forEach((item) => {
+                item.addEventListener("click", function () {
+                    // Xóa class 'fill' ở tất cả các span
+                    menuItems.forEach((li) => {
+                        const span = li.querySelector("span");
+                        span.classList.remove("fill");
+                    });
+
+                    // Thêm class 'fill' vào span của mục hiện tại
+                    const span = this.querySelector("span");
+                    span.classList.add("fill");
+                });
+            });
+        }
+        function initSliderTeacher(){
+            new Swiper(".mySwiper", {
+                speed: 700,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+            });
+        }
+
+    </script>
+</body>
+</html>

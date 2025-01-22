@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <!-- copy here -->
+    <div class="menu-bar-pc d-none d-lg-block">
+        <div class="container">
+            <ul class="d-lg-flex align-items-center menu-bar__parent">
+                <li><a href="javascript:void(0)" class="material-symbols-outlined fill">other_houses</a></li>
+                <li><a href="javascript:void(0)">Combo</a></li>
+                <li><a class="d-flex align-items-center gap-2" href="javascript:void(0)">Sách <span
+                            class="material-symbols-outlined fill">fiber_new</span></a></li>
+                <li><a href="javascript:void(0)">Giới thiệu</a></li>
+                <li><a href="javascript:void(0)">Giáo viên</a></li>
+                <li>
+                    <a class="d-flex align-items-center" href="javascript:void(0)">Học thử miễn phí <span
+                            class="material-symbols-outlined">arrow_drop_down</span></a>
+                    <ul class="menu-bar__child">
+                        <li><a href="javascript:void(0)">Lớp 12 - ôn thi ĐGNL/ĐGTD</a></li>
+                        <li><a href="javascript:void(0)">Lớp 12 - ôn thi TN THPT/ĐH ĐGNL/ĐGTD</a></li>
+                        <li><a href="javascript:void(0)">Lớp 12</a></li>
+                        <li><a href="javascript:void(0)">Lớp 11</a></li>
+                        <li><a href="javascript:void(0)">Lớp 10</a></li>
+                        <li><a href="javascript:void(0)">Lớp 9</a></li>
+                        <li><a href="javascript:void(0)">Lớp 8</a></li>
+                        <li><a href="javascript:void(0)">Lớp 7</a></li>
+                        <li><a href="javascript:void(0)">Lớp 6</a></li>
+                        <li><a href="javascript:void(0)">Lớp 5</a></li>
+                        <li><a href="javascript:void(0)">Lớp 4</a></li>
+                        <li><a href="javascript:void(0)">Lớp 3</a></li>
+                        <li><a href="javascript:void(0)">Lớp 2</a></li>
+                        <li><a href="javascript:void(0)">Lớp 1</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)">Thông báo</a></li>
+                <li><a href="javascript:void(0)">Nạp tiền</a></li>
+                <li><a class="code-active d-flex align-items-center gap-2" href="javascript:void(0)"><span
+                            class="material-symbols-outlined">qr_code_scanner</span>Kích hoạt</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- mobile -->
+    <ul class="d-flex d-lg-none align-items-center menu-bar-mobile">
+        <li class="combo">
+            <div class="wrap">
+                <span class="material-symbols-outlined">inventory_2</span>
+                <p>COMBO</p>
+                <i class="badge">2</i>
+            </div>
+        </li>
+        <li class="book">
+            <div class="wrap">
+                <span class="material-symbols-outlined">menu_book</span>
+                <p>SÁCH</p>
+                <i class="badge">3</i>
+            </div>
+        </li>
+        <!-- <li class="info">
+            <span class="material-symbols-outlined">
+                info
+            </span>
+            <p>Giới thiệu</p>
+        </li> -->
+        
+        <li class="school">
+            <span class="material-symbols-outlined">
+                school
+            </span>
+            <p>GIÁO VIÊN</p>
+        </li>
+        <li class="home">
+            <span class="material-symbols-outlined">home</span>
+            <p>HOME</p>
+        </li>
+        <li class="study">
+            <div class="wrap">
+                <span class="material-symbols-outlined">
+                    play_circle
+                </span>
+                <p>HỌC THỬ</p>
+            </div>
+        </li>
+        <li class="notify">
+            <div class="wrap">
+                <span class="material-symbols-outlined">
+                    notifications
+                </span>
+                <p>Thông báo</p>
+                <i class="badge">1</i>
+            </div>
+        </li>
+        <li class="notify">
+            <div class="wrap">
+                <span class="material-symbols-outlined">
+                    account_circle
+                </span>
+                <p>Cá nhân</p>
+            </div>
+        </li>
+    </ul>
+    <!-- copy here -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Lấy tất cả các mục li trong menu
+            const menuItems = document.querySelectorAll(".menu-bar-mobile li");
+
+            menuItems.forEach((item) => {
+                item.addEventListener("click", function () {
+                    // Xóa class 'fill' ở tất cả các span
+                    menuItems.forEach((li) => {
+                        const span = li.querySelector("span");
+                        span.classList.remove("fill");
+                    });
+
+                    // Thêm class 'fill' vào span của mục hiện tại
+                    const span = this.querySelector("span");
+                    span.classList.add("fill");
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -22,17 +22,19 @@
                 </div>
                 <div class="col col-md-5">
                     <div class="d-flex align-items-center justify-content-end gap-3 fixed-info__account">
-                        <a href="#" class="d-flex align-items-center gap-1 theme" href="javascript:void(0)">
-                            <span class="material-symbols-outlined symbols fill">dark_mode</span> <span class="d-none d-lg-flex">Chủ đề</span>
-                            <ul class="d-none list-theme">
-                                <li>Sáng</li>
-                                <li>Tối</li>
-                                <li>Mùa xuân</li>
-                                <li>Mùa hạ</li>
-                                <li>Mùa thu</li>
-                                <li>Mùa Đông</li>
+                        <div class="wrap-menu">
+                            <a href="#" class="d-flex align-items-center gap-1 theme" href="javascript:void(0)">
+                                <span class="material-symbols-outlined symbols fill">dark_mode</span> <span class="d-none d-lg-flex">Chủ đề</span>
+                            </a>
+                            <ul class="list-theme">
+                                <li data-name="light">Mặc định</li>
+                                <li data-name="dark">Tối</li>
+                                <li data-name="spring">Mùa xuân</li>
+                                <li data-name="summer">Mùa hạ</li>
+                                <li data-name="autumn">Mùa thu</li>
+                                <li data-name="winter">Mùa Đông</li>
                             </ul>
-                        </a>
+                        </div>
                         <a href="#" class="d-flex align-items-center gap-1 login" href="javascript:void(0)">
                             <span class="material-symbols-outlined symbols fill">person</span> <span>Đăng nhập</span>
                         </a>
@@ -48,6 +50,21 @@
         </div>
     </div>
     <!-- copy here -->
+    <script>
+        // Chọn tất cả các phần tử <li> trong danh sách
+        const themeItems = document.querySelectorAll('.list-theme li');
+
+        // Lặp qua từng phần tử <li> và thêm sự kiện click
+        themeItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Lấy giá trị của thuộc tính data-name
+                const themeName = item.getAttribute('data-name');
+
+                // Gán giá trị vào thuộc tính theme của thẻ <html>
+                document.documentElement.setAttribute('theme', themeName);
+            });
+        });
+    </script>
 </body>
 </html>
 

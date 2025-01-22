@@ -15,3 +15,18 @@
         @content;
     }
 }
+
+@mixin zoomIn {
+    animation: zoomIn 0.3s backwards ease-in-out;
+    @keyframes zoomIn {
+        0% {
+            transform: scale(0.5);
+        }
+        70% {
+            transform: scale(1.02);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+}
