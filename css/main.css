@@ -722,43 +722,100 @@ table {
   border-radius: 10px;
 }
 
-.support {
+.favior-teachers .favior-teachers__body .teacher-info {
+  font-size: 12px;
+}
+.favior-teachers .favior-teachers__body .teacher-info:hover .swiper-slide {
+  background: -webkit-linear-gradient(left top, var(--color-400), var(--color-300));
+}
+.favior-teachers .favior-teachers__body .swiper-slide {
+  background: -webkit-linear-gradient(left top, var(--color-300), var(--color-200));
+}
+.favior-teachers .favior-teachers__body .swiper {
+  width: 128px;
+  height: 128px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.favior-teachers .favior-teachers__body .teacher-name {
+  background: var(--primary);
+  color: var(--color-100);
+  width: 100%;
+}
+.favior-teachers .favior-teachers__body .teacher-class {
+  color: var(--color-800);
+  width: 60%;
+}
+
+.video__youtube {
+  padding: 0 calc((100% - 1200px) / 2);
+}
+.video__youtube .video__wrap {
+  width: 100% !important;
+  margin: auto;
+  padding: 5px;
+  background: var(--primary);
+  border-radius: 8px;
+}
+.video__youtube .video__wrap .video {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+.video__youtube .video__wrap .video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 7.5px;
+}
+
+.ts247-card.news .description .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid var(--color-300);
+  object-fit: cover;
+}
+
+.body .left .ts247-card {
   max-width: 320px;
 }
-.support .title {
+.body .left .ts247-card .title {
   color: var(--primary);
 }
-.support .description {
+.body .left .ts247-card .description {
   margin-top: 1rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.support .description a {
+.body .left .ts247-card .description a {
   --tw-text-opacity: 1;
   color: var(--primary);
 }
-.support .description a:hover {
+.body .left .ts247-card .description a:hover {
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
 }
-.support .actions {
+.body .left .ts247-card .actions {
   margin-top: 1rem;
   -moz-column-gap: 1rem;
   column-gap: 1rem;
   flex-shrink: 0;
 }
-.support .pref {
+.body .left .ts247-card .pref {
   font-size: 0.75rem;
   line-height: 1rem;
 }
-.support .pref a {
+.body .left .ts247-card .pref a {
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
 }
-.support .pref a:hover {
+.body .left .ts247-card .pref a:hover {
   color: var(--secondary);
 }
-.support .ts247-btn {
+.body .left .ts247-card .ts247-btn {
   font-size: 0.75rem;
   line-height: 1rem;
   background-color: var(--primary);
@@ -767,21 +824,12 @@ table {
   cursor: pointer;
   color: var(--white);
 }
-.support .ts247-btn:hover {
+.body .left .ts247-card .ts247-btn:hover {
   background-color: var(--green);
 }
-.support .ts247-btn:focus {
+.body .left .ts247-card .ts247-btn:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-.favior-teachers .favior-teachers__body .swiper-slide {
-  background: -webkit-linear-gradient(left top, var(--color-300), var(--color-200));
-}
-.favior-teachers .favior-teachers__body .swiper {
-  width: 128px;
-  height: 128px;
-  border-radius: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
